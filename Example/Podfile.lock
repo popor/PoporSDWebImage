@@ -1,0 +1,25 @@
+PODS:
+  - PoporSDWebImage (0.0.1):
+    - SDWebImage
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+
+DEPENDENCIES:
+  - PoporSDWebImage (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  PoporSDWebImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PoporSDWebImage: 3f7ad23f3780626fb888fdb76c4c639978402f35
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+
+PODFILE CHECKSUM: fbdd83761eaebb5a653ee23e5944fb3416d213de
+
+COCOAPODS: 1.5.3

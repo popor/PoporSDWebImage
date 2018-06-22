@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PoporSDWebImage_Example' do
+  pod 'PoporSDWebImage', :path => '../'
+
+  target 'PoporSDWebImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
