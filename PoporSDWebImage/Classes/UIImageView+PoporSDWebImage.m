@@ -7,7 +7,8 @@
 //
 
 #import "UIImageView+PoporSDWebImage.h"
-#import "SDWebImageManager.h"
+#import <SDWebImage/SDWebImageManager.h>
+#import <SDWebImage/SDDiskCache.h>
 
 @implementation UIImageView (PoporSDWebImage)
 
@@ -17,10 +18,13 @@
 
 + (NSString *)SDImagePath:(NSString *)url {
     SDWebImageManager * manager = [SDWebImageManager sharedManager];
-    NSURL * imageURL     = [NSURL URLWithString:url];
-    NSString * imageKey  = [manager cacheKeyForURL:imageURL];
-    NSString * imagePath = [manager.imageCache defaultCachePathForKey:imageKey];
-    return imagePath;
+    NSURL * imageURL            = [NSURL URLWithString:url];
+    NSString * imageKey         = [manager cacheKeyForURL:imageURL];
+    //    SDImageCache * imageCache   = (SDImageCache *)manager.imageCache;
+    //    SDDiskCache * diskCache     = [imageCache valueForKey:@"diskCache"];
+    
+    SDDiskCache * diskCache = [(NSObject *)manager.imageCache valueForKey:@"diskCache"];
+    return [diskCache cachePathForKey:imageKey];
 }
 
 + (NSString *)SDImageKey:(NSString *)url {

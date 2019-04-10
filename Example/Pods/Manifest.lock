@@ -1,9 +1,9 @@
 PODS:
-  - PoporSDWebImage (0.0.1):
+  - PoporSDWebImage (0.0.2):
     - SDWebImage
-  - SDWebImage (4.4.1):
-    - SDWebImage/Core (= 4.4.1)
-  - SDWebImage/Core (4.4.1)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
 
 DEPENDENCIES:
   - PoporSDWebImage (from `../`)
@@ -17,9 +17,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PoporSDWebImage: 3f7ad23f3780626fb888fdb76c4c639978402f35
-  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  PoporSDWebImage: 9cce8e337efa2e27fc3e3aae502682fe6d24bf2a
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
 
 PODFILE CHECKSUM: fbdd83761eaebb5a653ee23e5944fb3416d213de
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.0.beta.3
